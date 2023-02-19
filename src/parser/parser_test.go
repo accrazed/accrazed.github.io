@@ -162,6 +162,11 @@ func TestNewCum(t *testing.T) {
 				},
 			}}, p.TM)
 
+		assert.Equal(t, map[parser.Token][]byte{
+			"@CLASS": []byte("poem-body"),
+			"@TITLE": []byte("Rabbit Rabbit"),
+		}, p.VariableStore)
+
 		gotHtml, err := io.ReadAll(fout)
 		assert.NoError(t, err)
 		f, _ := os.Create("../fixtures/hardmode_test.html")

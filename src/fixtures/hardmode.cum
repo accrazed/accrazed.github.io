@@ -14,17 +14,17 @@
 HTML 
     BODY
         DIV @PARAM TITLE END
-        DIV @CLASS body 
-            @PARAM INSIDE 
+        DIV @CLASS body @ENDPARAM
+            @PARAM INSIDE
         END
     END 
 END
 @ENDCREATE
 
 BOILER 
-    @TITLE Rabbit
+    @TITLE Rabbit Rabbit @ENDPARAM
     @INSIDE
-        DIV @CLASS poem-body
+        DIV @CLASS poem-body @ENDPARAM
             @TEXT
             / eyes crude and apathetic. \
             / incessant, but turbulent. \
@@ -47,5 +47,6 @@ BOILER
             / and was it ever hungry? \
             / it's no longer part of her. \
             @ENDTEXT
-        END
+        END 
+    @ENDPARAM
 END

@@ -8,7 +8,7 @@ import (
 
 type Parser struct {
 	TM            map[Token]*AttributeTemplate
-	VariableStore map[Token][]byte
+	VariableStore map[Token][]Token
 	TokenStack    *Stack
 }
 
@@ -21,7 +21,7 @@ type AttributeTemplate struct {
 func New() *Parser {
 	return &Parser{
 		TM:            map[Token]*AttributeTemplate{},
-		VariableStore: map[Token][]byte{},
+		VariableStore: map[Token][]Token{},
 		TokenStack:    &Stack{},
 	}
 }
@@ -66,11 +66,11 @@ TokenLoop:
 			w.Write([]byte(">"))
 		case PARAM:
 			paramField := Token("@" + tokens[i+1])
-			paramVal, ok := p.VariableStore[paramField]
+			paramVals, ok := p.VariableStore[paramField]
 			if !ok {
-				paramVal = []byte{}
+				paramVals = []Token{}
 			}
-			w.Write(paramVal)
+			p.ParseTokens(w, scn, paramVals...)
 			i++
 		case TEXT:
 			w.Write([]byte("<div>"))
@@ -101,7 +101,6 @@ TokenLoop:
 				w.Write([]byte(token))
 				w.Write([]byte(" "))
 				continue
-
 			}
 
 			// token is a template
@@ -116,9 +115,17 @@ TokenLoop:
 				}
 
 				// param exists
-				scn.Scan()
-				paramValue := []byte(scn.Text())
-				p.VariableStore[paramField] = paramValue
+				p.VariableStore[paramField] = []Token{}
+				for scn.Scan() {
+					paramValue := Token(scn.Text())
+
+					if paramValue == ENDPARAM {
+						break
+					}
+					p.VariableStore[paramField] =
+						append(p.VariableStore[paramField], paramValue)
+
+				}
 			}
 
 			p.ParseTokens(w, scn, attrTemplate.Template...)

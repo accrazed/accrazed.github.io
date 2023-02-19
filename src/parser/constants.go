@@ -10,6 +10,7 @@ var (
 	CLOSE Token = "CLOSE"
 
 	PARAM     Token = "@PARAM"
+	ENDPARAM  Token = "@ENDPARAM"
 	TEXT      Token = "@TEXT"
 	ENDTEXT   Token = "@ENDTEXT"
 	BR        Token = "@BR"
