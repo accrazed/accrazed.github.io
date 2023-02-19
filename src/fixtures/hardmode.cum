@@ -1,0 +1,51 @@
+@CREATE HTML
+    OPEN html CLOSE
+@ENDCREATE 
+
+@CREATE BODY
+    OPEN body CLOSE
+@ENDCREATE 
+
+@CREATE DIV
+    OPEN div class=" @PARAM CLASS " CLOSE
+@ENDCREATE 
+
+@CREATE BOILER
+HTML 
+    BODY
+        DIV @PARAM TITLE END
+        DIV @CLASS body 
+            @PARAM INSIDE 
+        END
+    END 
+END
+@ENDCREATE
+
+BOILER 
+    @TITLE Rabbit
+    @INSIDE
+        DIV @CLASS poem-body
+            @TEXT
+            / eyes crude and apathetic. \
+            / incessant, but turbulent. \
+            / soft, yet unrelenting grasp. \
+            @BR
+            / it scribes no tune, prying soul without aesthetic \
+            / and deterritorializes the rabbit, \
+            / rendering her so meaningfully meaningless. \
+            @BR
+            / the rabbit shit everywhere while she was maimed \
+            / and she never could run any anyways. \
+            @BR
+            / she longs for futures but only has paws. \
+            @BR
+            / gestalt externally rererearranged. \
+            / her interface is corrupted - no, foreign. \
+            / modified, now ununrecognizable. \
+            @BR
+            / and was it always prying? \
+            / and was it ever hungry? \
+            / it's no longer part of her. \
+            @ENDTEXT
+        END
+END

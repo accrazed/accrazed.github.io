@@ -47,7 +47,7 @@ func (p *Parser) ParseCum(in io.Reader, w io.Writer) error {
 }
 
 func (p *Parser) ParseTokens(w io.Writer, scn *bufio.Scanner, tokens ...Token) error {
-ATT:
+TokenLoop:
 	for i := 0; i < len(tokens); i++ {
 		token := tokens[i]
 
@@ -66,7 +66,6 @@ ATT:
 			w.Write([]byte(">"))
 		case PARAM:
 			paramField := Token("@" + tokens[i+1])
-			fmt.Println(paramField)
 			paramVal, ok := p.VariableStore[paramField]
 			if !ok {
 				paramVal = []byte{}
@@ -74,6 +73,26 @@ ATT:
 			w.Write(paramVal)
 			i++
 		case TEXT:
+			w.Write([]byte("<div>"))
+		WordLoop:
+			for scn.Scan() {
+				word := scn.Text()
+
+				switch word {
+				case string(ENDTEXT):
+					break WordLoop
+				case `\`:
+					w.Write([]byte("</div>\n"))
+				case `/`:
+					w.Write([]byte("<div>"))
+				case string(BR):
+					w.Write([]byte("<br/>\n"))
+				default:
+					w.Write([]byte(word + " "))
+				}
+
+			}
+			w.Write([]byte("</div>"))
 
 		default:
 			// token is just a word
@@ -93,7 +112,7 @@ ATT:
 				_, ok := p.TM[token].Params[paramField]
 				if !ok {
 					p.ParseTokens(w, scn, append(attrTemplate.Template, paramField)...)
-					continue ATT
+					continue TokenLoop
 				}
 
 				// param exists

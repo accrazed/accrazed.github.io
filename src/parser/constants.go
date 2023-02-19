@@ -12,6 +12,7 @@ var (
 	PARAM     Token = "@PARAM"
 	TEXT      Token = "@TEXT"
 	ENDTEXT   Token = "@ENDTEXT"
+	BR        Token = "@BR"
 	CREATE    Token = "@CREATE"
 	ENDCREATE Token = "@ENDCREATE"
 )
