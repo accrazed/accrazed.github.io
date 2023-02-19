@@ -22,16 +22,20 @@ func (a *AttributeTemplate) Parse(scanrrr *bufio.Scanner, w *bytes.Buffer) {
 	}
 }
 
-func ParseCum(in io.Reader) (out io.Reader) {
+func NewCum(in io.Reader) (out io.Reader) {
 	w := new(bytes.Buffer)
 	out = bufio.NewReader(w)
 
 	scanrrr := bufio.NewScanner(in)
 
-	for scanrrr.Scan() {
-		// word := Token(scanrrr.Text())
-
-	}
+	parseCum(scanrrr, w)
 
 	return
+}
+
+func parseCum(scanrrr *bufio.Scanner, w *bytes.Buffer) {
+	for scanrrr.Scan() {
+		attr := Attr(scanrrr.Text())
+
+	}
 }

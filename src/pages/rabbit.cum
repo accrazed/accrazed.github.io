@@ -1,5 +1,5 @@
 BOILER 
-    @TITLE @TEXT Rabbit END END
+    @TITLE Rabbit END
     @INSIDE
         DIV @CLASS poem-body
             @TEXT

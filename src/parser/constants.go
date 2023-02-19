@@ -13,7 +13,6 @@ const (
 
 var AttrDict map[Attr][]byte = map[Attr][]byte{
 	HTML:  []byte("HTML>"),
-	DIV:   []byte("DIV>"),
 	START: []byte("<"),
 	END:   []byte("</"),
 	CLOSE: []byte(">"),
