@@ -1,19 +1,17 @@
 package parser
 
-type Attr string
+type Token string
 
-const (
-	HTML  Attr = "HTML"
-	DIV   Attr = "DIV"
-	START Attr = "START"
-	END   Attr = "END"
-	CLOSE Attr = "CLOSE"
-	PARAM Attr = "@PARAM"
+var (
+	ATTRIBUTE_UNKNOWN Token = "ATTRIBUTE_UNKNOWN"
+
+	OPEN  Token = "OPEN"
+	END   Token = "END"
+	CLOSE Token = "CLOSE"
+
+	PARAM     Token = "@PARAM"
+	TEXT      Token = "@TEXT"
+	ENDTEXT   Token = "@ENDTEXT"
+	CREATE    Token = "@CREATE"
+	ENDCREATE Token = "@ENDCREATE"
 )
-
-var AttrDict map[Attr][]byte = map[Attr][]byte{
-	HTML:  []byte("HTML>"),
-	START: []byte("<"),
-	END:   []byte("</"),
-	CLOSE: []byte(">"),
-}

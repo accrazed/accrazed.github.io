@@ -2,40 +2,141 @@ package parser
 
 import (
 	"bufio"
-	"bytes"
+	"fmt"
 	"io"
 )
 
+type Parser struct {
+	TM            map[Token]*AttributeTemplate
+	VariableStore map[Token][]byte
+	TokenStack    *Stack
+}
+
 type AttributeTemplate struct {
-	Name     Attr
-	Template []Attr
+	AttrName Token
+	Params   map[Token]bool
+	Template []Token
 }
 
-func (a *AttributeTemplate) Parse(scanrrr *bufio.Scanner, w *bytes.Buffer) {
-	boiler := &AttributeTemplate{
-		Name: "BOILER",
-		Template: []Attr{
-			"HTML", "BODY",
-			"DIV", "@PARAM", "TITLE", "END",
-			"DIV", "@PARAM", "INSIDE", "END",
-			"END", "END"},
+func New() *Parser {
+	return &Parser{
+		TM:            map[Token]*AttributeTemplate{},
+		VariableStore: map[Token][]byte{},
+		TokenStack:    &Stack{},
 	}
 }
 
-func NewCum(in io.Reader) (out io.Reader) {
-	w := new(bytes.Buffer)
-	out = bufio.NewReader(w)
+func (p *Parser) ParseCum(in io.Reader, w io.Writer) error {
+	scn := bufio.NewScanner(in)
+	scn.Split(bufio.ScanWords)
 
-	scanrrr := bufio.NewScanner(in)
+	for scn.Scan() {
+		token := Token(scn.Text())
 
-	parseCum(scanrrr, w)
+		if token == CREATE {
+			p.ParseTemplate(scn)
+			continue
+		}
 
-	return
+		if err := p.ParseTokens(w, scn, token); err != nil {
+			return fmt.Errorf("couldn't parse attribute %s: %w", token, err)
+		}
+	}
+
+	return nil
 }
 
-func parseCum(scanrrr *bufio.Scanner, w *bytes.Buffer) {
-	for scanrrr.Scan() {
-		attr := Attr(scanrrr.Text())
+func (p *Parser) ParseTokens(w io.Writer, scn *bufio.Scanner, tokens ...Token) error {
+ATT:
+	for i := 0; i < len(tokens); i++ {
+		token := tokens[i]
 
+		switch token {
+		case OPEN:
+			w.Write([]byte("<"))
+		case CLOSE:
+			w.Write([]byte(">"))
+		case END:
+			lastToken, ok := p.TokenStack.Pop()
+			if !ok {
+				return fmt.Errorf("unexpected END in stack: %v", p.TokenStack)
+			}
+			w.Write([]byte("</"))
+			w.Write([]byte(p.TM[lastToken].AttrName))
+			w.Write([]byte(">"))
+		case PARAM:
+			paramField := Token("@" + tokens[i+1])
+			fmt.Println(paramField)
+			paramVal, ok := p.VariableStore[paramField]
+			if !ok {
+				paramVal = []byte{}
+			}
+			w.Write(paramVal)
+			i++
+		case TEXT:
+
+		default:
+			// token is just a word
+			attrTemplate, ok := p.TM[token]
+			if !ok {
+				w.Write([]byte(token))
+				w.Write([]byte(" "))
+				continue
+
+			}
+
+			// token is a template
+			p.TokenStack.Push(token)
+			for scn.Scan() {
+				// check for params
+				paramField := Token(scn.Text())
+				_, ok := p.TM[token].Params[paramField]
+				if !ok {
+					p.ParseTokens(w, scn, append(attrTemplate.Template, paramField)...)
+					continue ATT
+				}
+
+				// param exists
+				scn.Scan()
+				paramValue := []byte(scn.Text())
+				p.VariableStore[paramField] = paramValue
+			}
+
+			p.ParseTokens(w, scn, attrTemplate.Template...)
+		}
 	}
+
+	return nil
+}
+
+func (p *Parser) ParseTemplate(scn *bufio.Scanner) error {
+	scn.Scan()
+	name := Token(scn.Text())
+	template := &AttributeTemplate{
+		AttrName: name,
+		Template: []Token{},
+		Params:   map[Token]bool{},
+	}
+
+	for scn.Scan() {
+		attr := Token(scn.Text())
+
+		if attr == ENDCREATE {
+			break
+		}
+
+		template.Template = append(template.Template, attr)
+
+		// log param field name
+		if attr == PARAM {
+			scn.Scan()
+			attr = Token(scn.Text())
+			template.Params["@"+attr] = true
+			template.Template = append(template.Template, attr)
+		}
+	}
+
+	p.TM[name] = template
+
+	return nil
 }
