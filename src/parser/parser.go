@@ -118,6 +118,7 @@ TokenLoop:
 				p.VariableStore[paramField] = []Token{}
 				for scn.Scan() {
 					paramValue := Token(scn.Text())
+					fmt.Println(paramValue)
 
 					if paramValue == ENDPARAM {
 						break
@@ -137,9 +138,11 @@ TokenLoop:
 
 func (p *Parser) ParseTemplate(scn *bufio.Scanner) error {
 	scn.Scan()
-	name := Token(scn.Text())
+	varName := Token(scn.Text())
+	scn.Scan()
+	attrName := Token(scn.Text())
 	template := &AttributeTemplate{
-		AttrName: name,
+		AttrName: attrName,
 		Template: []Token{},
 		Params:   map[Token]bool{},
 	}
@@ -162,7 +165,7 @@ func (p *Parser) ParseTemplate(scn *bufio.Scanner) error {
 		}
 	}
 
-	p.TM[name] = template
+	p.TM[varName] = template
 
 	return nil
 }
