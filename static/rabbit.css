@@ -1,69 +1,94 @@
+@import url("https://buns.gay/YoRHA-UI-BetterDiscord/font/stylesheet.css");
 html {
-  margin: auto;
-  width: 100%;
-  height: 100%;
+  font-family: sce-ps3_rodin_latinregular;
+}
+html ::-webkit-scrollbar {
+  width: 0.5em;
+}
+html ::-webkit-scrollbar-track {
+  background: transparent;
+}
+html ::-webkit-scrollbar-thumb {
+  background: pink;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background: #ff8da1;
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
-  background-color: pink;
+  background-color: black;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 2rem 5rem;
 }
 
 .site-header {
-  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+  color: pink;
+}
+.site-title {
   font-size: 3em;
-  margin-bottom: 1rem;
+  margin-right: 1em;
 }
-
-.section-title {
-  padding: 0 1rem;
-  background-color: pink;
+.site-link {
   font-size: 2em;
-  margin-bottom: 0.25em;
+  margin-right: 1em;
 }
-.section-body {
-  padding: 0 1rem;
-  margin-bottom: 1rem;
-  overflow: hidden;
+.site-link a {
+  color: pink;
 }
 
 .poems {
-  height: 25em;
-  background: linear-gradient(pink, purple);
+  display: flex;
+  flex-wrap: wrap;
 }
-.poems-title {
+.poems .poem {
+  box-shadow: -3px 0 0 #ff5a77, -9px 0 0 pink, -21px 0 0 #ff5a77;
+  background-color: pink;
+  padding: 1em;
+  margin-left: calc(21px + 0em);
+  margin-bottom: 0em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.poems .poem-title {
   font-size: 1.5em;
-  position: absolute;
+  font-weight: bold;
 }
-.poems-body {
-  position: absolute;
+.poems .poem-body div {
+  color: black;
 }
-.poems-body div {
-  background: linear-gradient(90deg, purple, pink);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.poems div {
-  animation: blink 0.05s infinite;
+.poems .poem div {
+  animation: blink 0.03s infinite;
 }
 
 .thoughts {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-self: center;
+  max-width: 65%;
 }
-.thoughts-title {
+.thoughts .thought {
+  box-shadow: -3px 0 0 #ff5a77, -9px 0 0 pink, -21px 0 0 #ff5a77;
+  background-color: pink;
+  padding: 1em;
+  margin-left: calc(21px + 0em);
+  margin-bottom: 0em;
+  margin-bottom: 3em;
+}
+.thoughts .thought-title {
+  font-weight: bold;
   font-size: 1.5em;
-  font-size: 2em;
   margin-bottom: 0.5em;
 }
-.thoughts-body {
+.thoughts .thought-body {
   animation: spin 10s infinite;
   font-size: 1.5em;
 }
-.thoughts-body div {
+.thoughts .thought-body div {
   margin-bottom: 0.5em;
 }
 
@@ -71,11 +96,14 @@ body {
   0% {
     opacity: 0;
   }
-  50% {
+  49% {
+    opacity: 0;
+  }
+  51% {
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 @keyframes spin {
