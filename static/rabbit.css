@@ -16,7 +16,9 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 body {
-  background-color: black;
+  background: url("./bg.webp") repeat-y;
+  background-attachment: fixed;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   margin: 2rem 5rem;
