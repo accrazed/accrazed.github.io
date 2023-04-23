@@ -16,12 +16,16 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 body {
-  background: url("./bg.webp") repeat-y;
+  background: url("./assets/bg.webp") repeat-y;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
   margin: 2rem 5rem;
+}
+
+a {
+  color: pink;
 }
 
 .site-header {
@@ -35,12 +39,49 @@ body {
   font-size: 3em;
   margin-right: 1em;
 }
+.site-title a {
+  display: flex;
+  flex-direction: row;
+  color: pink;
+}
+.site-title a:visited, .site-title a:hover, .site-title a:active, .site-title a:link {
+  text-decoration: none;
+}
 .site-link {
   font-size: 2em;
   margin-right: 1em;
 }
 .site-link a {
   color: pink;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-row-gap: 5em;
+  align-items: center;
+}
+.home > div {
+  font-size: 2em;
+  color: pink;
+}
+.home-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-left, .home-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-left .bnyuu, .home-right .bnyuu {
+  padding: 0.25em;
+}
+.home-left .glitch, .home-right .glitch {
+  width: 100%;
+  height: auto;
 }
 
 .poems {
@@ -108,6 +149,10 @@ body {
     opacity: 1;
   }
 }
+.blink:hover {
+  animation: blink 0.03s infinite;
+}
+
 @keyframes spin {
   0% {
     transform: rotateZ(0deg);
@@ -118,4 +163,58 @@ body {
   100% {
     transform: rotateZ(360deg);
   }
+}
+@keyframes bloopy {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bloop:hover {
+  animation: bloopy 0.25s;
+  color: #ff5a77;
+}
+
+@keyframes spinny1 {
+  0% {
+    transform: rotate3d(0);
+  }
+  12% {
+    transform: rotateX(-201deg) rotateY(62deg) rotateZ(-245deg);
+  }
+  25% {
+    transform: rotate3d(1, 1, 1, 45deg);
+  }
+  37% {
+    transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
+  }
+  50% {
+    transform: rotate3d(2, -1, -1, -0.2turn);
+  }
+  62% {
+    transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
+  }
+  75% {
+    transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
+  }
+  87% {
+    transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
+  }
+  100% {
+    transform: rotate3d(0);
+  }
+}
+.spin1:hover {
+  animation: spinny1 1s;
 }/*# sourceMappingURL=rabbit.css.map */
