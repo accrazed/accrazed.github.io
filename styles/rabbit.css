@@ -1,4 +1,4 @@
-@import url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/font/stylesheet.css");
+@import url("https://buns.gay/YoRHA-UI-BetterDiscord/font/stylesheet.css");
 html {
   font-family: sce-ps3_rodin_latinregular;
 }
@@ -99,6 +99,12 @@ a {
   min-width: -moz-fit-content;
   min-width: fit-content;
 }
+.poems .poem a {
+  color: #c00022;
+}
+.poems .poem a:visited {
+  color: #ff5a77;
+}
 .poems .poem-title {
   font-size: 1.5em;
   font-weight: bold;
@@ -121,6 +127,12 @@ a {
   margin-left: calc(21px + 0em);
   margin-bottom: 0em;
   margin-bottom: 3em;
+}
+.thoughts .thought a {
+  color: #c00022;
+}
+.thoughts .thought a:visited {
+  color: #ff5a77;
 }
 .thoughts .thought-title {
   font-weight: bold;
@@ -171,6 +183,12 @@ a {
   margin-bottom: 0em;
   height: -moz-fit-content;
   height: fit-content;
+}
+.gallery-body .gallery-piece a {
+  color: #c00022;
+}
+.gallery-body .gallery-piece a:visited {
+  color: #ff5a77;
 }
 .gallery-body .gallery-piece-image {
   width: 100%;

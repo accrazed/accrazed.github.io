@@ -1,4 +1,4 @@
-@import url('https://accrazed.github.io/YoRHA-UI-BetterDiscord/font/stylesheet.css');
+@import url('https://buns.gay/YoRHA-UI-BetterDiscord/font/stylesheet.css');
 
 $pri: pink;
 $sec: darken(
@@ -18,6 +18,13 @@ $subsection-title-size: 1.5em;
 	padding: 1em;
 	margin-left: calc(21px + $marg);
 	margin-bottom: $marg;
+
+	a {
+		color: $ter;
+		&:visited {
+			color: $sec;
+		}
+	}
 }
 
 html {
