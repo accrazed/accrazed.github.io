@@ -1,6 +1,6 @@
 {
   "vaultName": "AntiOedipus",
-  "lastExport": 1722568087143,
+  "lastExport": 1722569642649,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
   "useCustomHeadContent": false,
@@ -58,199 +58,199 @@
   ],
   "fileInfo": {
     "-1_img/Excalidraw/AttractionsOppositions_1.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 9501,
       "exportedPath": "-1_img/Excalidraw/AttractionsOppositions_1.html",
       "dependencies": []
     },
     "-1_img/Robert_Gie_1.png": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 634158,
       "exportedPath": "-1_img/Robert_Gie_1.png",
       "dependencies": []
     },
     "-1_img/Robert_Gie_2.png": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 535481,
       "exportedPath": "-1_img/Robert_Gie_2.png",
       "dependencies": []
     },
     "-1_img/Robert_Gie_3.png": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 581456,
       "exportedPath": "-1_img/Robert_Gie_3.png",
       "dependencies": []
     },
     "0_People/Freud.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 6,
       "exportedPath": "0_People/Freud.html",
       "dependencies": []
     },
     "0_People/Robert Gie.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 2179,
       "exportedPath": "0_People/Robert Gie.html",
       "dependencies": []
     },
     "0_People/The Subject.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 0,
       "exportedPath": "0_People/The Subject.html",
       "dependencies": []
     },
     "1_Desiring-Production/Desiring Machines.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 743,
       "exportedPath": "1_Desiring-Production/Desiring Machines.html",
       "dependencies": []
     },
     "1_Desiring-Production/The Schizophrenic.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 769,
       "exportedPath": "1_Desiring-Production/The Schizophrenic.html",
       "dependencies": []
     },
     "2_The Body Without Organs/Body Without Organs.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 0,
       "exportedPath": "2_The Body Without Organs/Body Without Organs.html",
       "dependencies": []
     },
     "2_The Body Without Organs/Celibate Machine.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 685,
       "exportedPath": "2_The Body Without Organs/Celibate Machine.html",
       "dependencies": []
     },
     "2_The Body Without Organs/Miraculating Machine.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 0,
       "exportedPath": "2_The Body Without Organs/Miraculating Machine.html",
       "dependencies": []
     },
     "2_The Body Without Organs/Paranoiac Machine.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 0,
       "exportedPath": "2_The Body Without Organs/Paranoiac Machine.html",
       "dependencies": []
     },
     "3_The Subject and Enjoyment/Attractions and Repulsions.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 2214,
       "exportedPath": "3_The Subject and Enjoyment/Attractions and Repulsions.html",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "-1_img/Excalidraw/Machine_1.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 9221,
       "exportedPath": "-1_img/Excalidraw/Machine_1.html",
       "dependencies": []
     },
     "1_Desiring-Production/Machine.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 378,
       "exportedPath": "1_Desiring-Production/Machine.html",
       "dependencies": []
     },
     "1_Desiring-Production/Process.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 1655,
       "exportedPath": "1_Desiring-Production/Process.html",
       "dependencies": []
     },
     "3_The Subject and Enjoyment/Conjunctive Synthesis.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 0,
       "exportedPath": "3_The Subject and Enjoyment/Conjunctive Synthesis.html",
       "dependencies": []
     },
     "etc/process of production.md": {
-      "modifiedTime": 1722568087143,
+      "modifiedTime": 1722569642649,
       "sourceSize": 15,
       "exportedPath": "etc/process of production.html",
       "dependencies": []
