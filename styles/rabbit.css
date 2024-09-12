@@ -1,6 +1,14 @@
 @import url("https://buns.gay/YoRHA-UI-BetterDiscord/font/stylesheet.css");
 html {
+  cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Normal_Select_v2.cur"), default;
   font-family: sce-ps3_rodin_latinregular;
+}
+html div {
+  cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Text_Select_v2.cur"), default;
+}
+html div a,
+html a div {
+  cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Link_Select_v2.cur"), default;
 }
 html ::-webkit-scrollbar {
   width: 0.5em;

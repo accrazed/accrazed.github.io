@@ -28,6 +28,19 @@ $subsection-title-size: 1.5em;
 }
 
 html {
+	cursor: url('https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Normal_Select_v2.cur'),
+		default;
+
+	div {
+		cursor: url('https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Text_Select_v2.cur'),
+			default;
+	}
+	div a,
+	a div {
+		cursor: url('https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Link_Select_v2.cur'),
+			default;
+	}
+
 	::-webkit-scrollbar {
 		width: 0.5em;
 	}
