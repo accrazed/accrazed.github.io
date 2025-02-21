@@ -1,4 +1,4 @@
-@import url('https://buns.gay/YoRHA-UI-BetterDiscord/font/stylesheet.css');
+@import url("https://buns.gay/YoRHA-UI-BetterDiscord/font/stylesheet.css");
 
 $pri: pink;
 $sec: darken(
@@ -28,16 +28,16 @@ $subsection-title-size: 1.5em;
 }
 
 html {
-	cursor: url('https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Normal_Select_v2.cur'),
+	cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Normal_Select_v2.cur"),
 		default;
 
 	div {
-		cursor: url('https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Text_Select_v2.cur'),
+		cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Text_Select_v2.cur"),
 			default;
 	}
 	div a,
 	a div {
-		cursor: url('https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Link_Select_v2.cur'),
+		cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Link_Select_v2.cur"),
 			default;
 	}
 
@@ -59,7 +59,7 @@ html {
 }
 
 body {
-	background: url('../assets/bg.webp') repeat-y;
+	background: url("../assets/bg.webp") repeat-y;
 	background-attachment: fixed;
 	background-size: cover;
 
@@ -171,6 +171,7 @@ a {
 }
 
 .thoughts {
+	line-height: 1.7em;
 	align-self: center;
 	max-width: 65%;
 
@@ -192,6 +193,11 @@ a {
 				margin-bottom: 0.5em;
 			}
 		}
+	}
+
+	.quote {
+		padding-left: 5px;
+		box-shadow: -3px 0 0 $sec;
 	}
 }
 

@@ -20,7 +20,7 @@ html ::-webkit-scrollbar-thumb {
   background: pink;
 }
 html ::-webkit-scrollbar-thumb:hover {
-  background: #ff8da1;
+  background: rgb(255, 141, 160.9047619048);
 }
 
 body {
@@ -97,21 +97,20 @@ a {
   flex-wrap: wrap;
 }
 .poems .poem {
-  box-shadow: -3px 0 0 #ff5a77, -9px 0 0 pink, -21px 0 0 #ff5a77;
+  box-shadow: -3px 0 0 rgb(255, 90, 118.8095238095), -9px 0 0 pink, -21px 0 0 rgb(255, 90, 118.8095238095);
   background-color: pink;
   padding: 1em;
   margin-left: calc(21px + 0em);
   margin-bottom: 0em;
   margin-right: 1em;
   margin-bottom: 1em;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 .poems .poem a {
-  color: #c00022;
+  color: rgb(192, 0, 33.5238095238);
 }
 .poems .poem a:visited {
-  color: #ff5a77;
+  color: rgb(255, 90, 118.8095238095);
 }
 .poems .poem-title {
   font-size: 1.5em;
@@ -125,11 +124,12 @@ a {
 }
 
 .thoughts {
+  line-height: 1.7em;
   align-self: center;
   max-width: 65%;
 }
 .thoughts .thought {
-  box-shadow: -3px 0 0 #ff5a77, -9px 0 0 pink, -21px 0 0 #ff5a77;
+  box-shadow: -3px 0 0 rgb(255, 90, 118.8095238095), -9px 0 0 pink, -21px 0 0 rgb(255, 90, 118.8095238095);
   background-color: pink;
   padding: 1em;
   margin-left: calc(21px + 0em);
@@ -137,10 +137,10 @@ a {
   margin-bottom: 3em;
 }
 .thoughts .thought a {
-  color: #c00022;
+  color: rgb(192, 0, 33.5238095238);
 }
 .thoughts .thought a:visited {
-  color: #ff5a77;
+  color: rgb(255, 90, 118.8095238095);
 }
 .thoughts .thought-title {
   font-weight: bold;
@@ -153,6 +153,10 @@ a {
 }
 .thoughts .thought-body div {
   margin-bottom: 0.5em;
+}
+.thoughts .quote {
+  padding-left: 5px;
+  box-shadow: -3px 0 0 rgb(255, 90, 118.8095238095);
 }
 
 .gallery {
@@ -167,8 +171,7 @@ a {
 }
 .gallery-title.color {
   background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
   animation: colorfully 0.75s infinite;
   background-size: 400% 100%;
@@ -184,19 +187,18 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .gallery-body .gallery-piece {
-  box-shadow: -3px 0 0 #ff5a77, -9px 0 0 pink, -21px 0 0 #ff5a77;
+  box-shadow: -3px 0 0 rgb(255, 90, 118.8095238095), -9px 0 0 pink, -21px 0 0 rgb(255, 90, 118.8095238095);
   background-color: pink;
   padding: 1em;
   margin-left: calc(21px + 0em);
   margin-bottom: 0em;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .gallery-body .gallery-piece a {
-  color: #c00022;
+  color: rgb(192, 0, 33.5238095238);
 }
 .gallery-body .gallery-piece a:visited {
-  color: #ff5a77;
+  color: rgb(255, 90, 118.8095238095);
 }
 .gallery-body .gallery-piece-image {
   width: 100%;
@@ -204,7 +206,7 @@ a {
   margin-bottom: 1em;
 }
 .gallery-body .gallery-piece-blurb {
-  color: #c00022;
+  color: rgb(192, 0, 33.5238095238);
 }
 .gallery-body#gandalfs-cat_treee {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -265,7 +267,7 @@ a {
 }
 .bloop:hover {
   animation: bloopy 0.25s;
-  color: #ff5a77;
+  color: rgb(255, 90, 118.8095238095);
 }
 
 @keyframes spinny1 {
@@ -311,9 +313,10 @@ a {
 }
 .colorful:hover {
   background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
   animation: colorfully 1s infinite;
   background-size: 400% 100%;
-}/*# sourceMappingURL=rabbit.css.map */
+}
+
+/*# sourceMappingURL=rabbit.css.map */
