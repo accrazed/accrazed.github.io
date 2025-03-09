@@ -36,6 +36,10 @@ a {
   color: pink;
 }
 
+.font-code {
+  font-family: monospace;
+}
+
 .site-header {
   display: flex;
   flex-direction: row;
