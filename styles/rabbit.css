@@ -127,10 +127,27 @@ a {
   animation: blinky 0.03s infinite;
 }
 
+.thought-list {
+  line-height: 1.7em;
+  box-shadow: -3px 0 0 rgb(255, 90, 118.8095238095), -9px 0 0 pink, -21px 0 0 rgb(255, 90, 118.8095238095);
+  background-color: pink;
+  padding: 1em;
+  margin-left: calc(21px + 0em);
+  margin-bottom: 0em;
+}
+.thought-list a {
+  color: rgb(192, 0, 33.5238095238);
+}
+.thought-list a:visited {
+  color: rgb(255, 90, 118.8095238095);
+}
+.thought-list .thought-entry a {
+  color: rgb(192, 0, 33.5238095238) !important;
+}
+
 .thoughts {
   line-height: 1.7em;
   align-self: center;
-  max-width: 65%;
 }
 .thoughts .thought {
   box-shadow: -3px 0 0 rgb(255, 90, 118.8095238095), -9px 0 0 pink, -21px 0 0 rgb(255, 90, 118.8095238095);

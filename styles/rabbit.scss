@@ -174,10 +174,19 @@ a {
 	}
 }
 
+.thought-list {
+	line-height: 1.7em;
+
+	@include card();
+
+	.thought-entry a {
+		color: $ter !important;
+	}
+}
+
 .thoughts {
 	line-height: 1.7em;
 	align-self: center;
-	max-width: 65%;
 
 	.thought {
 		@include card();
