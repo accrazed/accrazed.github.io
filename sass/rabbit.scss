@@ -1,0 +1,387 @@
+@import url("https://buns.gay/YoRHA-UI-BetterDiscord/font/stylesheet.css");
+
+$pri: pink;
+$sec: darken(
+	$color: $pri,
+	$amount: 20%,
+);
+$ter: darken(
+	$color: $pri,
+	$amount: 50%,
+);
+$bg: black;
+$subsection-title-size: 1.5em;
+
+@mixin card($marg: 0em) {
+	box-shadow: -3px 0 0 $sec, -9px 0 0 $pri, -21px 0 0 $sec;
+	background-color: pink;
+	padding: 1em;
+	margin-left: calc(21px + $marg);
+	margin-bottom: $marg;
+
+	a {
+		color: $ter;
+		&:visited {
+			color: $sec;
+		}
+	}
+}
+
+html {
+	cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Normal_Select_v2.cur"),
+		default;
+
+	div {
+		cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Text_Select_v2.cur"),
+			default;
+	}
+	div a,
+	a div {
+		cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Link_Select_v2.cur"),
+			default;
+	}
+
+	::-webkit-scrollbar {
+		width: 0.5em;
+	}
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	::-webkit-scrollbar-thumb {
+		background: $pri;
+
+		&:hover {
+			background: darken($color: $pri, $amount: 10%);
+		}
+	}
+
+	font-family: sce-ps3_rodin_latinregular;
+}
+
+body {
+	background: url("../assets/bg.webp") repeat-y;
+	background-attachment: fixed;
+	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 5rem;
+}
+
+a {
+	color: $pri;
+}
+
+.font-code {
+	font-family: monospace;
+}
+
+.site {
+	&-header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 2rem;
+
+		color: $pri;
+	}
+
+	&-title {
+		font-size: 3em;
+		margin-right: 1em;
+
+		a {
+			display: flex;
+			flex-direction: row;
+
+			&:visited,
+			&:hover,
+			&:active,
+			&:link {
+				text-decoration: none;
+			}
+
+			color: $pri;
+		}
+	}
+
+	&-link {
+		a {
+			color: $pri;
+		}
+		font-size: 2em;
+		margin-right: 1em;
+	}
+}
+
+.home {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-row-gap: 5em;
+	align-items: center;
+
+	& > div {
+		font-size: 2em;
+		color: $pri;
+	}
+
+	&-center {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&-left,
+	&-right {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		.bnyuu {
+			padding: 0.25em;
+		}
+
+		.glitch {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.poems {
+	display: flex;
+	flex-wrap: wrap;
+
+	.poem {
+		@include card();
+		margin-right: 1em;
+		margin-bottom: 1em;
+		min-width: fit-content;
+
+		&-title {
+			font-size: $subsection-title-size;
+			font-weight: bold;
+		}
+
+		&-body {
+			div {
+				color: black;
+			}
+		}
+		div {
+			animation: blinky 0.03s infinite;
+		}
+	}
+}
+
+.thought-list {
+	line-height: 1.7em;
+
+	@include card();
+
+	.thought-entry a {
+		color: $ter !important;
+	}
+}
+
+.thoughts {
+	line-height: 1.7em;
+	align-self: center;
+
+	.thought {
+		@include card();
+		margin-bottom: 3em;
+
+		&-title {
+			font-weight: bold;
+			font-size: $subsection-title-size;
+			margin-bottom: 0.5em;
+		}
+
+		&-body {
+			animation: spinny 10s infinite;
+			font-size: 1.5em;
+
+			div {
+				margin-bottom: 0.5em;
+			}
+		}
+	}
+
+	.quote {
+		padding-left: 5px;
+		box-shadow: -3px 0 0 $sec;
+	}
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&-title {
+		color: $pri;
+		font-size: 3em;
+		margin-bottom: 0.5em;
+
+		&.color {
+			background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+			background-clip: text;
+			color: transparent;
+			animation: colorfully 0.75s infinite;
+			background-size: 400% 100%;
+		}
+	}
+
+	&-desc {
+		color: $pri;
+		font-size: 2em;
+		margin-bottom: 1em;
+	}
+
+	&-body {
+		display: grid;
+		grid-gap: 1em;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+		.gallery-piece {
+			@include card(0em);
+			height: fit-content;
+
+			&-image {
+				width: 100%;
+				height: auto;
+				margin-bottom: 1em;
+			}
+
+			&-blurb {
+				color: $ter;
+			}
+		}
+
+		&#gandalfs-cat_treee {
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+
+		&#gandalfs-cat_veins {
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+	}
+}
+
+.antioedipus {
+	color: $pri;
+}
+
+@keyframes blinky {
+	0% {
+		opacity: 0;
+	}
+	49% {
+		opacity: 0;
+	}
+	51% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.blink {
+	&:hover {
+		animation: blinky 0.03s infinite;
+	}
+}
+
+@keyframes spinny {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	99% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes bloopy {
+	0% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(1.5);
+	}
+	50% {
+		transform: scale(1);
+	}
+	75% {
+		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.bloop {
+	&:hover {
+		animation: bloopy 0.25s;
+		color: $sec;
+	}
+}
+
+@keyframes spinny1 {
+	0% {
+		transform: rotate3d(0);
+	}
+	12% {
+		transform: rotateX(-201deg) rotateY(62deg) rotateZ(-245deg);
+	}
+	25% {
+		transform: rotate3d(1, 1, 1, 45deg);
+	}
+	37% {
+		transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
+	}
+	50% {
+		transform: rotate3d(2, -1, -1, -0.2turn);
+	}
+	62% {
+		transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
+	}
+	75% {
+		transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
+	}
+	87% {
+		transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
+	}
+	100% {
+		transform: rotate3d(0);
+	}
+}
+
+.spin1 {
+	&:hover {
+		animation: spinny1 1s;
+	}
+}
+
+@keyframes colorfully {
+	0% {
+		background-position: 0;
+	}
+	50% {
+		background-position: 100% 0;
+	}
+}
+
+.colorful {
+	&:hover {
+		background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+		background-clip: text;
+		color: transparent;
+		animation: colorfully 1s infinite;
+		background-size: 400% 100%;
+	}
+}
