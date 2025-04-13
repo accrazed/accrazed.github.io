@@ -1,0 +1,26 @@
+{% block content %}
+
+<div class="gallery">
+  <div class="gallery-title color">Holy shit is that glitch art???</div>
+  <div class="gallery-title">yes. below r some galleries.</div>
+
+  <div class="gallery-body">
+    {% for page in section.pages %}
+    <div class="gallery-piece">
+      <a href="gallery.piece">
+        <img class="gallery-piece-image" src="./static/art/bunker-graffiti/sirvs_ps30.png" alt="sirvs" />
+        <div class="gallery-piece-blurb"></div>
+      </a>
+    </div>
+
+    <div class="gallery-piece">
+      <a href="./art_gandalfs-cat.html">
+        <img class="gallery-piece-image" src="./static/art/gandalfs-cat/treee_ps15.png" alt="sirvs" />
+        <div class="gallery-piece-blurb">[~1654910820] gandalfs cat</div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}

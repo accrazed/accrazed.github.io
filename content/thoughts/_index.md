@@ -5,5 +5,3 @@ template = "writlists.html"
 page_template = "writ.html"
 +++
 
-
-Hi

@@ -1,14 +1,12 @@
 @import url("https://buns.gay/YoRHA-UI-BetterDiscord/font/stylesheet.css");
 
 $pri: pink;
-$sec: darken(
-	$color: $pri,
-	$amount: 20%,
-);
-$ter: darken(
-	$color: $pri,
-	$amount: 50%,
-);
+$sec: darken($color: $pri,
+		$amount: 20%,
+	);
+$ter: darken($color: $pri,
+		$amount: 50%,
+	);
 $bg: black;
 $subsection-title-size: 1.5em;
 
@@ -21,6 +19,7 @@ $subsection-title-size: 1.5em;
 
 	a {
 		color: $ter;
+
 		&:visited {
 			color: $sec;
 		}
@@ -35,6 +34,7 @@ html {
 		cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Text_Select_v2.cur"),
 			default;
 	}
+
 	div a,
 	a div {
 		cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/assets/cursors/Hack_Link_Select_v2.cur"),
@@ -44,9 +44,11 @@ html {
 	::-webkit-scrollbar {
 		width: 0.5em;
 	}
+
 	::-webkit-scrollbar-track {
 		background: transparent;
 	}
+
 	::-webkit-scrollbar-thumb {
 		background: $pri;
 
@@ -59,7 +61,7 @@ html {
 }
 
 body {
-	background: url("../assets/bg.webp") repeat-y;
+	background: url("../bg.webp") repeat-y;
 	background-attachment: fixed;
 	background-size: cover;
 
@@ -109,6 +111,7 @@ a {
 		a {
 			color: $pri;
 		}
+
 		font-size: 2em;
 		margin-right: 1em;
 	}
@@ -120,7 +123,7 @@ a {
 	grid-row-gap: 5em;
 	align-items: center;
 
-	& > div {
+	&>div {
 		font-size: 2em;
 		color: $pri;
 	}
@@ -130,6 +133,7 @@ a {
 		flex-direction: column;
 		align-items: center;
 	}
+
 	&-left,
 	&-right {
 		display: flex;
@@ -168,6 +172,7 @@ a {
 				color: black;
 			}
 		}
+
 		div {
 			animation: blinky 0.03s infinite;
 		}
@@ -277,12 +282,15 @@ a {
 	0% {
 		opacity: 0;
 	}
+
 	49% {
 		opacity: 0;
 	}
+
 	51% {
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -298,9 +306,11 @@ a {
 	0% {
 		transform: rotateZ(0deg);
 	}
+
 	99% {
 		transform: rotateZ(0deg);
 	}
+
 	100% {
 		transform: rotateZ(360deg);
 	}
@@ -310,15 +320,19 @@ a {
 	0% {
 		transform: scale(1);
 	}
+
 	25% {
 		transform: scale(1.5);
 	}
+
 	50% {
 		transform: scale(1);
 	}
+
 	75% {
 		transform: scale(1.5);
 	}
+
 	100% {
 		transform: scale(1);
 	}
@@ -335,27 +349,35 @@ a {
 	0% {
 		transform: rotate3d(0);
 	}
+
 	12% {
 		transform: rotateX(-201deg) rotateY(62deg) rotateZ(-245deg);
 	}
+
 	25% {
 		transform: rotate3d(1, 1, 1, 45deg);
 	}
+
 	37% {
 		transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
 	}
+
 	50% {
 		transform: rotate3d(2, -1, -1, -0.2turn);
 	}
+
 	62% {
 		transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
 	}
+
 	75% {
 		transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
 	}
+
 	87% {
 		transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
 	}
+
 	100% {
 		transform: rotate3d(0);
 	}
@@ -371,6 +393,7 @@ a {
 	0% {
 		background-position: 0;
 	}
+
 	50% {
 		background-position: 100% 0;
 	}
