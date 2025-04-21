@@ -1,4 +1,6 @@
 +++
 title = "poems"
-template = "gallery.html"
+sort_by = "date"
+template = "writlist.html"
+page_template = "writ.html"
 +++
