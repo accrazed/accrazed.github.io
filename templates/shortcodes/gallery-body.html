@@ -1,0 +1,19 @@
+{% block content %}
+
+<div class="gallery-body">
+  {% for asset in get_files(path=page.extra.src[0]) -%}
+  {%- if asset is matching("[.](jpg|png)$") -%}
+  <div class="gallery-piece">
+    <a href="./static/art/gandalfs-cat/treee.png" target="_blank">
+      <img class="gallery-piece-image" src="{{ asset }}" alt="sirvs" />
+      <div class="gallery-piece-blurb">"treee.png"</div>
+    </a>
+  </div>
+  <a href="{{ get_url(path=asset) }}" target="_blank">
+    <img src="{{ image.url }}" />
+  </a>
+  {%- endif %}
+  {%- endfor %}
+</div>
+
+{% endblock content %}

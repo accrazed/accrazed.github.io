@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block content %}
+<div class="gallery">
+	<div class="gallery-title color">Holy shit is that glitch art???</div>
+	<div class="gallery-title">yes. below r some galleries.</div>
+
+	<div class="gallery-body">
+		{% for page in section.pages %}
+		<div class="gallery-piece">
+			<a href="{{ page.permalink | safe }}">
+				<img
+					class="gallery-piece-image"
+					src="{{ page.extra.cover[0] }}"
+					alt="{{ page.extra.alt[0] }}"
+				/>
+				<div class="gallery-piece-blurb">{{ page.title }}</div>
+			</a>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock content %}
