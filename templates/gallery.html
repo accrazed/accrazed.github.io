@@ -1,18 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+
 <div class="gallery">
-
-  {% for asset in section.assets -%}
-  {%- if asset is matching("[.](jpg|png)$") -%}
-  {% set image = resize_image(path=asset, width=240, height=180) %}
-  <div class="gallery-piece">
-    <a href="./static/art/gandalfs-cat/treee.png" target="_blank">
-      <img class="gallery-piece-image" src="./static/art/gandalfs-cat/treee.png" alt="sirvs" />
-      <div class="gallery-piece-blurb">"treee.png"</div>
-    </a>
-  </div>
-  <a href="{{ get_url(path=asset) }}" target="_blank">
-    <img src="{{ image.url }}" />
-  </a>
-  {%- endif %}
-  {%- endfor %}
-
+	{{ page.content | safe }}
 </div>
+
+{% endblock content %}
