@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="poems">
+  <div class="poem">
+    <div class="poem-title">{{ page.title }}</div>
+    <div class="poem-body font-code">
+      {{ page.content | safe }}
+    </div>
+  </div>
+</div>
+{% endblock content %}

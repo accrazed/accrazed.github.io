@@ -48,13 +48,14 @@ Don't worry, it'll get better \
 Don't worry \
 Don't worry
 
-> I've been wanting to read more Mark Fisher, the little that I've read has tickled me in
+I've been wanting to read more Mark Fisher, the little that I've read has tickled me in
 ways that I'm rather fond of. He talks about time, and I know time gets brought up a lot
 in the ("Post-left"? "schizoid left"? "CCRU-ey shit"??? I don't like words, you'll know
 what I mean of course :3) social circles and rivers of conscious I return to time and
 time again. I think about "memory" a lot too, with respect to Deleuze-Guattari's
 attribution of cruelty to the inscribing socius:
-It [culture] makes men or their organs into the parts and wheels of the social machine.
+
+> It [culture] makes men or their organs into the parts and wheels of the social machine.
 The sign is a position of desire; but the first signs are the territorial signs that
 plant their flags in bodies. And if one wants to call this inscription in naked flesh
 "writing," then it must be said that speech in fact presupposes writing, and that it is
