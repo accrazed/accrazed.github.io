@@ -1,6 +1,6 @@
 +++
 title = "11 May XX25 [07:11 EST]: nietzschka logs"
-date = 2025-08-02
+date = 2025-05-11
 +++
 
 loneliness in voids staved off \
