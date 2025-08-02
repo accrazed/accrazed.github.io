@@ -24,75 +24,75 @@ for taking the pictures and letting me fuck with them.
 <div class="gallery-title color">//treee</div>
 <div class="gallery-body" id="gandalfs-cat_treee">
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/treee.png" target="_blank">
+    <a href="./treee.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/treee.png"
-            alt="sirvs"
+            src="./treee.png"
+            alt="tree"
         />
         <div class="gallery-piece-blurb">"treee.png"</div>
     </a>
 </div>
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/treee_ps10.png" target="_blank">
+    <a href="./treee_ps10.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/treee_ps10.png"
-            alt="sirvs"
+            src="./treee_ps10.png"
+            alt="tree"
         />
         <div class="gallery-piece-blurb">"treee_ps10.png"</div>
     </a>
 </div>
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/treee_ps15.png" target="_blank">
+    <a href="./treee_ps15.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/treee_ps15.png"
-            alt="sirvs"
+            src="./treee_ps15.png"
+            alt="tree"
         />
         <div class="gallery-piece-blurb">"treee_ps15.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/treee_ps20.png" target="_blank">
+    <a href="./treee_ps20.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/treee_ps20.png"
-            alt="sirvs"
+            src="./treee_ps20.png"
+            alt="tree"
         />
         <div class="gallery-piece-blurb">"treee_ps20.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/treee_ps20h.png" target="_blank">
+    <a href="./treee_ps20h.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/treee_ps20h.png"
-            alt="sirvs"
+            src="./treee_ps20h.png"
+            alt="tree"
         />
         <div class="gallery-piece-blurb">"treee_ps20h.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/treee_ps20hi.png" target="_blank">
+    <a href="./treee_ps20hi.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/treee_ps20hi.png"
-            alt="sirvs"
+            src="./treee_ps20hi.png"
+            alt="tree"
         />
         <div class="gallery-piece-blurb">"treee_ps20hi.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/treee_ps35.png" target="_blank">
+    <a href="./treee_ps35.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/treee_ps35.png"
-            alt="sirvs"
+            src="./treee_ps35.png"
+            alt="tree"
         />
         <div class="gallery-piece-blurb">"treee_ps35.png"</div>
     </a>
@@ -103,187 +103,187 @@ for taking the pictures and letting me fuck with them.
 <div class="gallery-title color">//veins</div>
 <div class="gallery-body" id="gandalfs-cat_veins">
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/persimmon_veins.jpg" target="_blank">
+    <a href="./persimmon_veins.jpg" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/persimmon_veins.jpg"
-            alt="sirvs"
+            src="./persimmon_veins.jpg"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"persimmon_veins.jpg"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps.png" target="_blank">
+    <a href="./veins_ps.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps.png"
-            alt="sirvs"
+            src="./veins_ps.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps20.png" target="_blank">
+    <a href="./veins_ps20.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps20.png"
-            alt="sirvs"
+            src="./veins_ps20.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps20.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps30.png" target="_blank">
+    <a href="./veins_ps30.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps30.png"
-            alt="sirvs"
+            src="./veins_ps30.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps30.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps30thr.png" target="_blank">
+    <a href="./veins_ps30thr.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps30thr.png"
-            alt="sirvs"
+            src="./veins_ps30thr.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps30thr.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps30thrhi.png" target="_blank">
+    <a href="./veins_ps30thrhi.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps30thrhi.png"
-            alt="sirvs"
+            src="./veins_ps30thrhi.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps30thrhi.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps30thrlo.png" target="_blank">
+    <a href="./veins_ps30thrlo.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps30thrlo.png"
-            alt="sirvs"
+            src="./veins_ps30thrlo.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps30thrlo.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps35.png" target="_blank">
+    <a href="./veins_ps35.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps35.png"
-            alt="sirvs"
+            src="./veins_ps35.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps35.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps35h.png" target="_blank">
+    <a href="./veins_ps35h.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps35h.png"
-            alt="sirvs"
+            src="./veins_ps35h.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps35h.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps35hi.png" target="_blank">
+    <a href="./veins_ps35hi.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps35hi.png"
-            alt="sirvs"
+            src="./veins_ps35hi.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps35hi.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps35i.png" target="_blank">
+    <a href="./veins_ps35i.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps35i.png"
-            alt="sirvs"
+            src="./veins_ps35i.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps35i.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps40.png" target="_blank">
+    <a href="./veins_ps40.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps40.png"
-            alt="sirvs"
+            src="./veins_ps40.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps40.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps35_cs1.png" target="_blank">
+    <a href="./veins_ps35_cs1.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps35_cs1.png"
-            alt="sirvs"
+            src="./veins_ps35_cs1.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps35_cs1.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps35_cs2.png" target="_blank">
+    <a href="./veins_ps35_cs2.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps35_cs2.png"
-            alt="sirvs"
+            src="./veins_ps35_cs2.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps35_cs2.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps35_cs3.png" target="_blank">
+    <a href="./veins_ps35_cs3.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps35_cs3.png"
-            alt="sirvs"
+            src="./veins_ps35_cs3.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps35_cs3.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps35_cs4.png" target="_blank">
+    <a href="./veins_ps35_cs4.png" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps35_cs4.png"
-            alt="sirvs"
+            src="./veins_ps35_cs4.png"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps35_cs4.png"</div>
     </a>
 </div>
 
 <div class="gallery-piece">
-    <a href="./gandalfs-cat/veins_ps35_cs5.gif" target="_blank">
+    <a href="./veins_ps35_cs5.gif" target="_blank">
         <img
             class="gallery-piece-image"
-            src="./gandalfs-cat/veins_ps35_cs5.gif"
-            alt="sirvs"
+            src="./veins_ps35_cs5.gif"
+            alt="veins"
         />
         <div class="gallery-piece-blurb">"veins_ps35_cs5.gif"</div>
     </a>
