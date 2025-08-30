@@ -4,6 +4,20 @@
 
 <div class="gallery">
 	{{ page.content | safe }}
+
+	{% for gallery in page.extra.galleries %}
+	<div class="gallery-title color">//{{ gallery.title }}</div>
+	<div class="gallery-body">
+		{% for piece in gallery.pieces %}
+		<div class="gallery-piece">
+			<a href="./{{ piece }}" target="_blank">
+				<img class="gallery-piece-image" src="./{{ piece }}" alt="{{ piece }}" />
+				<div class="gallery-piece-blurb">"{{ piece }}"</div>
+			</a>
+		</div>
+		{% endfor %}
+	</div>
+	{% endfor %}
 </div>
 
 {% endblock content %}
