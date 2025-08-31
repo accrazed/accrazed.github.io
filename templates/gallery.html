@@ -10,8 +10,8 @@
 	<div class="gallery-body">
 		{% for piece in gallery.pieces %}
 		<div class="gallery-piece">
-			<a href="./{{ piece }}" target="_blank">
-				<img class="gallery-piece-image" src="./{{ piece }}" alt="{{ piece }}" />
+			<a href="../../art-dump/{{ page.extra.src }}/{{ piece }}" target="_blank">
+				<img class="gallery-piece-image" src="../../art-dump/{{ page.extra.src }}/{{ piece }}" alt="{{ piece }}" />
 				<div class="gallery-piece-blurb">"{{ piece }}"</div>
 			</a>
 		</div>

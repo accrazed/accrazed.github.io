@@ -3,9 +3,9 @@ title = "[~1756598580]: house"
 date = 0000-01-02
 
 [extra]
-cover = ["./house/house-purp_t20.png"]
-alt = ["house"]
-src = ["./house"]
+cover = "house-purp_t20.png"
+alt = "house"
+src = "house"
 
 [[extra.galleries]]
 title = "house"

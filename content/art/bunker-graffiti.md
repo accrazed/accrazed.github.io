@@ -3,9 +3,9 @@ title = "[~1658118665]: bunker graffiti"
 date = 0000-01-01
 
 [extra]
-cover = ["./bunker-graffiti/sirvs_ps30.png"]
-alt = ["sirvs"]
-src = ["./bunker-graffiti"]
+cover = "sirvs_ps30.png"
+alt = "sirvs"
+src = "bunker-graffiti"
 
 [[extra.galleries]]
 title = "sirvs"

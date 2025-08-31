@@ -3,8 +3,9 @@ title = "[~1654910820] gandalfs cat"
 date = 0000-01-01
 
 [extra]
-cover = ["../art/gandalfs-cat/treee_ps15.png"]
-alt = ["tree"]
+cover = "treee_ps15.png"
+alt = "tree"
+src = "gandalfs-cat"
 
 [[extra.galleries]]
 title = "treee"
