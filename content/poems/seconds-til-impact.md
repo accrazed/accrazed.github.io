@@ -16,7 +16,7 @@ a vacuum gaping the body without organs \
 
 ::[bones removed, scanned in three dimensions via spiral patterned laser interference, disposed] \
 ::[reconstructed with quartz carved uniformly, polished at 1024 grit] \
-::[cartilege disposed. magnetorheological fluid injected into their sites post-construction] \
+::[cartilage disposed. magnetorheological fluid injected into their sites post-construction] \
 ::[titanium plates tether a 3mm alloy fiber strand, internally embedded and bolted on each vertebrael body down the length of the spine]
 
 (my back is sore)
@@ -31,7 +31,7 @@ a vacuum gaping the body without organs \
 ::[open ports 6757, 6753, 6756, ...] \
 ::[blood surrounded by a dielectric, weaved over with acutely ordered flesh fibers, fitted in silicone, tuned to specific resonances, calibrated in repetition, tightened onto the incision] \
 ::[a certain handshake] \
-::[a vitalized spec that marks and is marked] \
+::[a vitalized spec that marks and is marked] 
 
 (is someone hearing these thoughts? where are they coming from???)
 
