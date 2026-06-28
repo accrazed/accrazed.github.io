@@ -45,13 +45,21 @@
     <img class="bnyuu" src="../bnuuy.gif" alt="bnuuy" />
   </div>
 
+  <!-- show latest post-->
+  {% set_global pp = [] %}
+      {% for section in section.subsections %}
+          {% set sub = get_section(path=section) %}
+          {% set_global pp = pp | concat(with=sub.pages)%}
+      {% endfor %}
+  {% set_global latest_post = pp | sort(attribute="date") | last %}
+
   <div class="home-left"></div>
   <div class="home-center">
     <div>
       <div>Last Update:</div>
       <br />
-      <a href="../poems/dead-space/">
-        <div class="color">27 Jun XX26 [01:36 PST]: dead space</div>
+      <a href={{latest_post.permalink}}>
+        <div class="colorful-bloopy">{{latest_post.title}}</div>
       </a>
     </div>
   </div>

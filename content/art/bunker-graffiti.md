@@ -32,7 +32,7 @@ pieces = [
 ]
 +++
 
-<div class="gallery-title color">[~1658118665]: bunker graffiti</div>
+<div class="gallery-title colorful">[~1658118665]: bunker graffiti</div>
 <div class="gallery-desc">
 This is a set of varying glitch I performed on a couple photos of one of the abandoned
 military bunkers that litter the areas around Seattle. There's two original photos in total:

@@ -30,7 +30,7 @@ pieces = [
 ]
 +++
 
-<div class="gallery-title color">[~1658118665]: house</div>
+<div class="gallery-title colorful">[~1658118665]: house</div>
 <div class="gallery-desc">
 Some experiments from a subset of pictures I took at a garden. I appreciate how truly undifferentiable the bright reflection of the bubbles pic gets upon getting sorted.
 </div>

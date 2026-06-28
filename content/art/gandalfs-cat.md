@@ -42,7 +42,7 @@ pieces = [
 ]
 +++
 
-<div class="gallery-title color">[~1654910820] gandalfs cat</div>
+<div class="gallery-title colorful">[~1654910820] gandalfs cat</div>
 <div class="gallery-desc">
 This is some glitch based on some photos from someone I met thru a mutual. I like this set
 because it goes to show how much pixel sorting can vary when it comes to visual appeal,

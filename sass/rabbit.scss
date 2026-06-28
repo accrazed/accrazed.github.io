@@ -236,13 +236,6 @@ a {
 		font-size: 3em;
 		margin-bottom: 0.5em;
 
-		&.color {
-			background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
-			background-clip: text;
-			color: transparent;
-			animation: colorfully 0.75s infinite;
-			background-size: 400% 100%;
-		}
 	}
 
 	&-desc {
@@ -323,7 +316,7 @@ a {
 	}
 }
 
-@keyframes bloopy {
+@keyframes blooping {
 	0% {
 		transform: scale(1);
 	}
@@ -345,9 +338,57 @@ a {
 	}
 }
 
+@keyframes color-blooping-spinning {
+	0% {
+		transform: scale(1) rotate3d(0);
+		background-position: 0;
+	}
+
+	12% {
+		transform: rotateX(-201deg) rotateY(62deg) rotateZ(-245deg);
+	}
+
+	25% {
+		transform: scale(1.5) rotate3d(1, 1, 1, 45deg);
+	}
+
+	37% {
+		transform: rotateX(130deg) rotateY(137deg) rotateZ(42deg);
+	}
+
+	50% {
+		transform: scale(1) rotate3d(2, -1, -1, -0.2turn);
+	}
+
+	62% {
+		transform: rotateX(150deg) rotateY(160deg) rotateZ(999deg);
+	}
+
+	75% {
+		transform: scale(1.5) rotateX(200deg) rotateY(170deg) rotateZ(75deg);
+	}
+
+	87% {
+		transform: rotateX(255deg) rotateY(213deg) rotateZ(110eg);
+	}
+
+	100% {
+		transform: scale(1) rotate3d(0);
+		background-position: 125% 0;
+	}
+}
+
+.colorful-bloopy {
+	background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+	background-clip: text;
+	color: transparent;
+	background-size: 400% 100%;
+	animation: color-blooping-spinning 2s linear infinite;
+}
+
 .bloop {
 	&:hover {
-		animation: bloopy 0.25s;
+		animation: blooping 0.25s;
 		color: $sec;
 	}
 }
@@ -401,17 +442,27 @@ a {
 		background-position: 0;
 	}
 
-	50% {
-		background-position: 100% 0;
+	100% {
+		background-position: 125% 0;
 	}
 }
 
 .colorful {
+	& {
+		background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+		background-clip: text;
+		color: transparent;
+		animation: colorfully 1s linear infinite;
+		background-size: 400% 100%;
+	}
+}
+
+.colorful-hover {
 	&:hover {
 		background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
 		background-clip: text;
 		color: transparent;
-		animation: colorfully 1s infinite;
+		animation: colorfully 1s linear infinite;
 		background-size: 400% 100%;
 	}
 }
